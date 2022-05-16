@@ -30,18 +30,24 @@ body {
 }
 
 main {
-  border: 2px dotted rgb(51, 150, 153);
+  /* border: 2px dotted rgb(51, 150, 153); */
   height: auto;
   width: 20rem;
   margin: auto;
 }
 
 .profile {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  border: 1px solid gray;
+  border-radius: 1em;
   justify-content: center;
   align-items: center;
+  background: url(/images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 145px;
+  padding-top: 4em;
 }
 
 .profile-info {
@@ -56,8 +62,9 @@ main {
 
 .profile-info__image-container {
   border-radius: 50%;
-  border: 2px solid grey;
-  padding: 0.5em;
+  border: 2px solid white;
+  background-color: white;
+  padding: 0.15em;
   margin-bottom: 1em;
 }
 
