@@ -1,0 +1,74 @@
+/* Write GOOD comments so that next developer ( killer psycopath who knows where you stay ) ... */
+/* .... who is going to maintain this code; need NOT have to get back to you */
+
+/* Use Required Google Font with Weights */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* Universal Selector & explicitly set box-sizing type */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  everything applicable to or can be used for all elements */
+/* color palette */
+:root {
+  --bg-color: hsl(212, 45%, 89%);
+  --card-bg-color: hsl(0, 0%, 100%);
+  --card-title-color: hsl(218, 44%, 22%);
+  --card-content-color: hsl(220, 15%, 55%);
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border: 2px dotted rgb(51, 150, 153);
+  height: auto;
+  width: 20rem;
+  margin: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5em;
+}
+
+.profile-info__child-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid blue;
+  margin: 1em 0.5em;
+  width: 100%;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
