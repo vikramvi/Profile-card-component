@@ -23,10 +23,27 @@
 body {
   height: 100vh;
   font-family: "Outfit", sans-serif;
-  background-color: var(--color-main-bg);
+  background-color: hsl(185, 75%, 39%);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  /* reduce size */
+  background-size: 400px;
+  background-position: top -150px left -150px, bottom -150px right -150px;
+
+  /* debugging purpose only */
+  /* background-image: url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -650px right -250px; */
+
+  /* debugging purpose only */
+  /* background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top -450px left -250px, bottom -650px right -250px; */
 }
 
 main {
@@ -34,6 +51,8 @@ main {
   height: auto;
   width: 20rem;
   margin: auto;
+  background-color: white;
+  border-radius: 1em;
 }
 
 .profile {
@@ -88,11 +107,16 @@ main {
   margin-right: 1em;
 }
 
+.profile-info__age {
+  color: rgb(178, 175, 175);
+}
+
 .profile-info__city {
   width: 100%;
   text-align: center;
   padding-bottom: 2em;
   border-bottom: 0.05em solid;
+  color: rgb(178, 175, 175);
 }
 
 /* 3rd Child */
@@ -102,7 +126,7 @@ main {
   justify-content: space-around;
   align-items: center;
   /* border: 2px solid blue; */
-  margin: 1em 0.5em;
+  margin: 1em 0.5em 2em 0.5em;
   width: 100%;
 }
 
@@ -113,8 +137,38 @@ main {
   align-items: center;
 }
 
+.profile-info__name--bold {
+  font-weight: bold;
+}
+
 .profile-stats__number {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.4em;
+}
+
+.profile-stats__number--bold {
+  font-weight: bold;
+}
+
+.profile-stats__description--small {
+  font-size: 0.7em;
+  color: rgb(178, 175, 175);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/images/bg-pattern-top.svg),
+      url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -450px left -250px, bottom -650px right -250px;
+    /* reset size as it's reduced for mobile */
+    background-size: auto;
+  }
+  main {
+    /* border: 2px dotted rgb(51, 150, 153); */
+    height: auto;
+    width: 24rem;
+    margin: auto;
+  }
 }
 
 /* .attribution { font-size: 11px; text-align: center; }
