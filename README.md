@@ -16,6 +16,26 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+## Overview
+
+This is 6th project from "Frontend Mentor" to sharpen HTML & CSS skills along with responsive web design and it's build with BEM and Flex layout.
+
+### The challenge
+
+Adding multiple background images with correct position, proper usage of symantic HTML elements, flex layout and over all CSS good practices. Learning never STOPS.
+
+### Screenshot
+
+![Google Drawing](./screenshots/drawing.png)
+
+![Desktop Preview](./screenshots/desktop.png)
+
+![Mobile Preview](./screenshots/mobile.png)
+
+### Links
+
+- [Solution URL ](https://vikramvi.github.io/Profile-card-component/)
+
 ## Author
 
 - Frontend Mentor - [@vikramvi](https://www.frontendmentor.io/profile/vikramvi)
