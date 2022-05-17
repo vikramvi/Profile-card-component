@@ -2,7 +2,7 @@
 /* .... who is going to maintain this code; need NOT have to get back to you */
 
 /* Use Required Google Font with Weights */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 /* Universal Selector & explicitly set box-sizing type */
 * {
@@ -14,25 +14,43 @@
 /*  everything applicable to or can be used for all elements */
 /* color palette */
 :root {
-  --bg-color: hsl(212, 45%, 89%);
+  --bg-color: hsl(185, 75%, 39%);
   --card-bg-color: hsl(0, 0%, 100%);
   --card-title-color: hsl(218, 44%, 22%);
   --card-content-color: hsl(220, 15%, 55%);
+  --border-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 59%);
+
+  --ff-primary: "Kumbh Sans", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
 }
 
 body {
   height: 100vh;
+
   font-family: "Outfit", sans-serif;
-  background-color: hsl(185, 75%, 39%);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-400);
+
+  background-color: var(--bg-color);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-image: url(/images/bg-pattern-top.svg),
     url(/images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
   /* reduce size */
-  background-size: 400px;
-  background-position: top -150px left -150px, bottom -150px right -150px;
+  background-size: 25em;
+  background-position: top -9.375em left -9.375em,
+    bottom -9.375em right -9.375em;
 
   /* debugging purpose only */
   /* background-image: url(/images/bg-pattern-bottom.svg);
@@ -51,7 +69,7 @@ main {
   height: auto;
   width: 20rem;
   margin: auto;
-  background-color: white;
+  background-color: var(--card-bg-color);
   border-radius: 1em;
 }
 
@@ -59,7 +77,6 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid gray;
   border-radius: 1em;
   justify-content: center;
   align-items: center;
@@ -81,8 +98,8 @@ main {
 
 .profile-info__image-container {
   border-radius: 50%;
-  border: 2px solid white;
-  background-color: white;
+  border: 2px solid var(--border-color);
+  background-color: var(--card-bg-color);
   padding: 0.15em;
   margin-bottom: 1em;
 }
@@ -104,11 +121,17 @@ main {
 }
 
 .profile-info__name {
-  margin-right: 1em;
+  margin-right: 0.75em;
+  font-size: var(--fs-500);
+}
+
+.profile-info__name--bold {
+  font-weight: bold;
 }
 
 .profile-info__age {
-  color: rgb(178, 175, 175);
+  color: var(--text-color);
+  font-size: var(--fs-500);
 }
 
 .profile-info__city {
@@ -116,7 +139,7 @@ main {
   text-align: center;
   padding-bottom: 2em;
   border-bottom: 0.05em solid;
-  color: rgb(178, 175, 175);
+  color: var(--text-color);
 }
 
 /* 3rd Child */
@@ -137,12 +160,9 @@ main {
   align-items: center;
 }
 
-.profile-info__name--bold {
-  font-weight: bold;
-}
-
 .profile-stats__number {
   margin-bottom: 0.4em;
+  font-size: var(--fs-400);
 }
 
 .profile-stats__number--bold {
@@ -150,8 +170,8 @@ main {
 }
 
 .profile-stats__description--small {
-  font-size: 0.7em;
-  color: rgb(178, 175, 175);
+  font-size: var(--fs-300);
+  color: var(--text-color);
 }
 
 @media (min-width: 768px) {
