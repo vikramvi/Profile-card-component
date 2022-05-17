@@ -44,8 +44,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url(/images/bg-pattern-top.svg),
-    url(/images/bg-pattern-bottom.svg);
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
   /* reduce size */
   background-size: 25em;
@@ -80,7 +80,7 @@ main {
   border-radius: 1em;
   justify-content: center;
   align-items: center;
-  background: url(/images/bg-pattern-card.svg);
+  background: url("/images/bg-pattern-card.svg");
   background-repeat: no-repeat;
   background-size: 100% 145px;
   padding-top: 4em;
@@ -176,8 +176,8 @@ main {
 
 @media (min-width: 768px) {
   body {
-    background-image: url(/images/bg-pattern-top.svg),
-      url(/images/bg-pattern-bottom.svg);
+    background-image: url("/images/bg-pattern-top.svg"),
+      url("/images/bg-pattern-bottom.svg");
     background-repeat: no-repeat;
     background-position: top -450px left -250px, bottom -650px right -250px;
     /* reset size as it's reduced for mobile */
