@@ -36,6 +36,35 @@ Adding multiple background images with correct position, proper usage of symanti
 
 - [Solution URL ](https://vikramvi.github.io/Profile-card-component/)
 
+## My process
+
+- Use Google drawing to draw boxes as per design
+- Add BEM class names against each of the boxes
+- Create HTML -> add BEM class names
+- Mobile screen styling first
+- Use media query to design for desktop
+
+### Built with
+
+- Semantic HTML5 markup
+- BEM
+- CSS
+- Flexbox
+- Mobile First workflow
+
+### What I learned
+
+- Able to solve few complex challenges wrt CSS by googling and reading different approaches.
+- Breaking down big problme into as small chunk as possible, helps to solve it quickly
+
+### Continued Development
+
+- More practice, reading, study is needed wrt BEM, SEO, Accessibility, CSS
+
+### Useful resources
+
+- Check Acknowledgments section
+
 ## Author
 
 - Frontend Mentor - [@vikramvi](https://www.frontendmentor.io/profile/vikramvi)
