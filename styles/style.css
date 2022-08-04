@@ -64,7 +64,7 @@ body {
   background-position: top -450px left -250px, bottom -650px right -250px; */
 }
 
-main {
+.main {
   /* border: 2px dotted rgb(51, 150, 153); */
   height: auto;
   width: 20rem;
@@ -183,7 +183,7 @@ main {
     /* reset size as it's reduced for mobile */
     background-size: auto;
   }
-  main {
+  .main {
     /* border: 2px dotted rgb(51, 150, 153); */
     height: auto;
     width: 24rem;
